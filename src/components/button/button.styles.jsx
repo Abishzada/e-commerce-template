@@ -18,6 +18,11 @@ export const BaseButton = styled.button`
   display: flex;
   justify-content: center;
 
+  
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+
   &:hover {
     background-color: white;
     color: black;
