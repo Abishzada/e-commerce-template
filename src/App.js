@@ -11,6 +11,7 @@ import {
   createUserDocumentFromAuth,
 } from './utils/firebase/firebase.utils';
 import { setCurrentUser } from './store/user/user.action';
+// import { setCategoriesMap } from './store/categories/categories.action';
 import { useDispatch } from 'react-redux';
 
 const App = () => {
@@ -22,10 +23,11 @@ const App = () => {
         createUserDocumentFromAuth(user);
       }
       dispatch(setCurrentUser(user));
+      // dispatch(setCategoriesMap())
     });
 
     return unsubscribe;
-  }, [dispatch ]);
+  }, [dispatch]);
 
   return (
     <Routes>
